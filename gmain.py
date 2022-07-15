@@ -715,7 +715,7 @@ class AntiDebug(Functions):
             "Barroso", "Moddz",
         ]
         self.blackListedPCNames = [
-            "Barroso", "Moddz",,
+            "Barroso", "Moddz",
         ]
         self.blackListedHWIDS = [
             "7AB5C494-39F5-4941-9163-47F54D6D5016",
